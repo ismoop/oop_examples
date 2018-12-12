@@ -3,6 +3,7 @@ public class Circle extends SimpleGeometricObject {
     private double radius;
 
     public Circle() {
+        super.setType("Circle");
     }
 
     public Circle(double radius) {

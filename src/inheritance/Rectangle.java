@@ -5,6 +5,8 @@ public class Rectangle extends SimpleGeometricObject {
     private double height;
 
     public Rectangle() {
+
+        super.setType("Rectangle");
     }
 
     public Rectangle(double width, double height) {

@@ -1,8 +1,9 @@
 package inheritance;
 
 
-public class SimpleGeometricObject {
+public class SimpleGeometricObject extends Object {
     private String color = "white";
+    private String type = "";
     private boolean filled;
     private java.util.Date dateCreated;
 
@@ -49,5 +50,18 @@ public class SimpleGeometricObject {
     public String toString() {
         return "created on " + dateCreated + "\ncolor: " + color +
                 " and filled: " + filled;
+    }
+
+    public void draw()
+    {
+        System.out.println("Drawing object of type "+type);
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
